@@ -1,0 +1,46 @@
+console.log('🛠️ Создание файла токенов вручную');
+console.log('');
+console.log('📋 Если файла нет вообще, создадим его:');
+console.log('');
+
+// Базовая структура Jupiter token list
+const jupiterTokenList = {
+  "name": "Jupiter Token List", 
+  "logoURI": "https://jup.ag/svg/jupiter-logo.svg",
+  "keywords": ["solana", "spl", "token"],
+  "timestamp": "2025-07-12T10:19:04.000Z",
+  "version": {
+    "major": 1,
+    "minor": 0, 
+    "patch": 0
+  },
+  "tokens": [
+    {
+      "chainId": 101,
+      "address": "DbHjXycpEG7QcQnHdVVBwmwmCQtfrhNxzaTiSpNguq36",
+      "symbol": "SPYM",
+      "name": "SpyMoon",
+      "decimals": 9,
+      "logoURI": "https://gateway.pinata.cloud/ipfs/bafkreidja3jutzjs2lu5vz36quexqqahqcackvpgzf4rltvcnbuxmswy3e",
+      "tags": [],
+      "extensions": {
+        "website": "https://spymoon.online",
+        "description": "Welcome to the Dark Side of the Moon — you're in SpyMoon. SpyMoon powers the future of private messaging with Web3 technology."
+      }
+    }
+  ]
+};
+
+console.log('📄 Содержимое для нового файла:');
+console.log('Имя файла: solana.tokenlist.json');
+console.log('');
+console.log(JSON.stringify(jupiterTokenList, null, 2));
+
+console.log('');
+console.log('📋 Инструкции по созданию:');
+console.log('1. Откройте: https://github.com/ming2t4m/token-list');
+console.log('2. Нажмите "Add file" → "Create new file"');
+console.log('3. Назовите файл: solana.tokenlist.json');
+console.log('4. Вставьте содержимое выше');
+console.log('5. Commit с сообщением: "Add SpyMoon token to Solana token list"');
+console.log('6. Создайте Pull Request в jup-ag/token-list');
